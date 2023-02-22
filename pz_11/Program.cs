@@ -21,7 +21,7 @@ namespace pz_11
                 "А как зовут вас?";
 
             //Запись текста в ступенчатый массив
-            string[] words = phrase.Split('.', 4);
+            string[] words = phrase.Split('.', '4');
 
             //Вывод массива
             foreach (var word in words)
