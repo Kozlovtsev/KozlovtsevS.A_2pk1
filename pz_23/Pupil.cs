@@ -21,8 +21,14 @@ namespace pz_23
             get { return name; }
             set
             {
-                if (name != null) { value = name; }
-                else { Console.WriteLine("Неккоректно заданное имя"); }
+                if (value == "")
+                {
+                    Console.WriteLine("имя не существует");
+                }
+                else
+                {
+                    name = value;
+                }
             }
         }
         public int Age
@@ -30,8 +36,14 @@ namespace pz_23
             get { return age; }
             set
             {
-                if (age >= 7 & age <= 18) { value = age; }
-                else { Console.WriteLine("Неккоректно заданный возраст"); }
+                if (age <= 7 && age >= 18)
+                {
+                    Console.WriteLine("Неккоректно заданный возраст");
+                }
+                else
+                {
+                    age = value;
+                }
             }
         }
         public int Clas
@@ -39,7 +51,7 @@ namespace pz_23
             get { return clas; }
             set
             {
-                value = clas;
+                clas = value;
             }
         }
         public float mathMark
@@ -47,8 +59,8 @@ namespace pz_23
             get { return mathmark; }
             set
             {
-                if (mathmark >= 2 & mathmark <= 5) { value = mathmark; }
-                else { Console.WriteLine("Неккоректная оценка"); }
+                if (mathmark <= 2 & mathmark >= 5) { Console.WriteLine("Неккоректная оценка"); }
+                else { mathmark = value; }
             }
         }
         public float physMark
@@ -56,8 +68,8 @@ namespace pz_23
             get { return physmark; }
             set
             {
-                if (physmark >= 2 & physmark <= 5) { value = physmark; }
-                else { Console.WriteLine("Неккоректная оценка"); }
+                if (physmark <= 2 & physmark >= 5) { Console.WriteLine("Неккоректная оценка"); }
+                else { physmark = value; }
             }
         }
         public float chemMark
@@ -65,18 +77,18 @@ namespace pz_23
             get { return chemmark; }
             set
             {
-                if (chemmark >= 2 & chemmark <= 5) { value = chemmark; }
-                else { Console.WriteLine("Неккоректная оценка"); }
+                if (chemmark <= 2 & chemmark >= 5) { Console.WriteLine("Неккоректная оценка"); }
+                else { chemmark = value; }
             }
         }
-        public void PrintInfo()
+        public virtual void PrintInfo()
         {
-            Console.WriteLine($"Имя: {Name}\n Возраст: {Age}\n Класс:{Clas}\n Оценка по математике: {mathMark}\n Оценка по физике: {physMark}\n Оценка по химии:{chemMark}");
+            Console.WriteLine($"Имя: {Name}\nВозраст: {Age}\nКласс:{Clas}\nОценка по математике: {mathMark}\nОценка по физике: {physMark}\nОценка по химии:{chemMark}");
         }
         public double GetMediumMark()
         {
             float average_value = (physMark + mathMark + chemMark) / 3;
-            Console.WriteLine("Среднее арифметическое оценок:", average_value);
+            Console.WriteLine("Среднее арифметическое оценок:" + average_value);
             return average_value;
         }
     }
