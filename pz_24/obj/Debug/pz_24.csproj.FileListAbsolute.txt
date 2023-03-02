@@ -1,0 +1,8 @@
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_24\bin\Debug\pz_24.exe.config
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_24\bin\Debug\pz_24.exe
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_24\bin\Debug\pz_24.pdb
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_24\obj\Debug\pz_24.csproj.AssemblyReference.cache
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_24\obj\Debug\pz_24.csproj.SuggestedBindingRedirects.cache
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_24\obj\Debug\pz_24.csproj.CoreCompileInputs.cache
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_24\obj\Debug\pz_24.exe
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_24\obj\Debug\pz_24.pdb
