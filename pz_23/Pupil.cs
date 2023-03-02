@@ -8,41 +8,70 @@ namespace pz_23
 {
     internal class Pupil
     {
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public int Clas { get; set; }
-        public float mathMark { get; set; }
-        public float physMark { get; set; }
-        public float chemMark { get; set; }
-
-        static public int otlichniki = 0;
-        static public int bad_marks = 0;
-        public Pupil(string name, int age, int clas, float mathmark, float physmark, float chemmark)
-
+        public string name;
+        public int age;
+        public int clas;
+        public float mathmark;
+        public float physmark;
+        public float chemmark;
+        public int otlichniki = 0;
+        public int bad_marks = 0;
+        public string Name
         {
-            if (name != null) { Name = name; }
-            else { Console.WriteLine("Неккоректно заданное имя"); }
-            if (age >= 7 & age <= 18) { Age = age; }
-            else { Console.WriteLine("Неккоректно заданный возраст"); }
-            Clas = clas;
-            if (mathmark >= 2 & mathmark <= 5) { mathMark = mathmark; }
-            else { Console.WriteLine("Неккоректная оценка"); }
-            if (physmark >= 2 & physmark <= 5) { physMark = physmark; }
-            else { Console.WriteLine("Неккоректная оценка"); }
-            if (chemmark >= 2 & chemmark <= 5) { chemMark = chemmark; }
-            else { Console.WriteLine("Неккоректная оценка"); }
+            get { return name; }
+            set
+            {
+                if (name != null) { value = name; }
+                else { Console.WriteLine("Неккоректно заданное имя"); }
+            }
         }
-
+        public int Age
+        {
+            get { return age; }
+            set
+            {
+                if (age >= 7 & age <= 18) { value = age; }
+                else { Console.WriteLine("Неккоректно заданный возраст"); }
+            }
+        }
+        public int Clas
+        {
+            get { return clas; }
+            set
+            {
+                value = clas;
+            }
+        }
+        public float mathMark
+        {
+            get { return mathmark; }
+            set
+            {
+                if (mathmark >= 2 & mathmark <= 5) { value = mathmark; }
+                else { Console.WriteLine("Неккоректная оценка"); }
+            }
+        }
+        public float physMark
+        {
+            get { return physmark; }
+            set
+            {
+                if (physmark >= 2 & physmark <= 5) { value = physmark; }
+                else { Console.WriteLine("Неккоректная оценка"); }
+            }
+        }
+        public float chemMark
+        {
+            get { return chemmark; }
+            set
+            {
+                if (chemmark >= 2 & chemmark <= 5) { value = chemmark; }
+                else { Console.WriteLine("Неккоректная оценка"); }
+            }
+        }
         public void PrintInfo()
         {
-            Console.WriteLine($"Имя: {Name}\n" +
-                                $"Возраст: {Age}\n" +
-                                $"Класс: {Clas}\n" +
-                                $"Оценка по математике: {mathMark}\n" +
-                                $"Оценка по физике: {physMark}\n" +
-                                $"Оценка по химии: {chemMark}");
-            if (chemMark == 2 || physMark == 2 || mathMark == 2) { bad_marks++; }
-            if (chemMark == 5 & physMark == 5 & mathMark == 5) { otlichniki++; }
+            Console.WriteLine($"Имя: {Name}\n Возраст: {Age}\n Класс:{Clas}\n Оценка по математике: {mathMark}\n Оценка по физике: {physMark}\n Оценка по химии:{chemMark}");
         }
         public double GetMediumMark()
         {
@@ -51,4 +80,4 @@ namespace pz_23
             return average_value;
         }
     }
-}
+}        

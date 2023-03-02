@@ -10,26 +10,57 @@ namespace pz_22
     {
         static void Main(string[] args)
         {
-            Pupil fn = new Pupil("", 25, 11, 10, 10, 10);
-            fn.PrintInfo();
-            Console.WriteLine(fn.GetMediumMark());
-            Pupil fn2 = new Pupil("Сергей", 17, 11, 5, 2, 5);
-            fn2.PrintInfo();
-            Console.WriteLine(fn2.GetMediumMark());
-            Pupil fn3 = new Pupil("Женя", 17, 11, 4, 5, 5);
-            fn3.PrintInfo();
-            Console.WriteLine(fn3.GetMediumMark());
-            Pupil fn4 = new Pupil("Рома", 17, 11, 5, 5, 5);
-            fn4.PrintInfo();
-            Console.WriteLine(fn4.GetMediumMark());
-            Pupil fn5 = new Pupil("Никита", 16, 9, 5, 5, 5);
-            fn5.PrintInfo();
-            Console.WriteLine(fn5.GetMediumMark());
-            Pupil fn6 = new Pupil("Ваня", 17, 11, 5, 5, 5);
-            fn6.PrintInfo();
-            Console.WriteLine(fn6.GetMediumMark());
-            Console.WriteLine($"Количество учеников с двойками: {Pupil.bad_marks}\nКоличество круглых отличников: {Pupil.otlichniki}");
-            Console.ReadKey();
+            Pupil pupil1 = new Pupil();
+            pupil1.Name = "Сергей";
+            pupil1.Age = 17;
+            pupil1.Clas = 11;
+            pupil1.mathMark = 5;
+            pupil1.physMark = 2;
+            pupil1.chemMark = 5;
+
+            Pupil pupil2 = new Pupil();
+            pupil2.Name = "Женя";
+            pupil2.Age = 17;
+            pupil2.Clas = 11;
+            pupil2.mathMark = 4;
+            pupil2.physMark = 5;
+            pupil2.chemMark = 5;
+
+            Pupil pupil3 = new Pupil();
+            pupil3.Name = "Рома";
+            pupil3.Age = 17;
+            pupil3.Clas = 11;
+            pupil3.mathMark = 5;
+            pupil3.physMark = 5;
+            pupil3.chemMark = 5;
+
+            Pupil pupil4 = new Pupil();
+            pupil4.Name = "Никита";
+            pupil4.Age = 16;
+            pupil4.Clas = 11;
+            pupil4.mathMark = 5;
+            pupil4.physMark = 5;
+            pupil4.chemMark = 5;
+
+            Pupil pupil5 = new Pupil();
+            pupil5.Name = "Ваня";
+            pupil5.Age = 18;
+            pupil5.Clas = 11;
+            pupil5.mathMark = 5;
+            pupil5.physMark = 5;
+            pupil5.chemMark = 5;
+
+            pupil1.PrintInfo();
+            pupil1.GetMediumMark();
+            pupil2.PrintInfo();
+            pupil2.GetMediumMark();
+            pupil3.PrintInfo();
+            pupil3.GetMediumMark();
+            pupil4.PrintInfo();
+            pupil4.GetMediumMark();
+            pupil5.PrintInfo();
+            pupil5.GetMediumMark();
+            Console.ReadLine();
         }
     }
 }
