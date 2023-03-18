@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Значки\I.png" />
+    <None Remove="Значки\U.png" />
+    <None Remove="Значки\БукваB.png" />
+    <None Remove="Значки\Галочка.png" />
+    <None Remove="Значки\Корзина.png" />
+    <None Remove="Значки\Сохранить.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Значки\I.png" />
+    <Resource Include="Значки\U.png" />
+    <Resource Include="Значки\БукваB.png" />
+    <Resource Include="Значки\Галочка.png" />
+    <Resource Include="Значки\Корзина.png" />
+    <Resource Include="Значки\Сохранить.png" />
+  </ItemGroup>
+
+</Project>

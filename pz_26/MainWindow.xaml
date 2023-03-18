@@ -6,51 +6,66 @@
         xmlns:local="clr-namespace:pz_26"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-   
-    <Grid>
-        <StackPanel>
-            <Button x:Name="acceptButton" Content="ОК" IsDefault="True" Click="acceptButton_Click" />
-            <Button x:Name="escButton" Content="Выход" IsCancel="True" Click="escButton_Click" />
-        </StackPanel>
-        <Button x:Name="button1" Width="60" Height="30" Background="LightGray" Content="Нажать" Click="Button_Click"/>
+
+    <DockPanel LastChildFill="True">
         
-        <WrapPanel MinHeight="20">
-            <Button x:Name="but_I" Width="30" Height="30">
+        <Menu Height="25" DockPanel.Dock ="Top" Background="LightGray">
+            <MenuItem Header="Файл" Height="25" FontSize="15">
+                <MenuItem Header = "Новый файл">
+                    <MenuItem.Icon>
+                        <Image Source="Значки\Галочка.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+
+                        <MenuItem Header = "Открыть">
+                            <MenuItem.Icon>
+                                <Image Source="Значки\Галочка.png"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+
+                        <MenuItem Header = "Сохранить">
+                            <MenuItem.Icon>
+                                <Image Source="Значки\Сохранить.png"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+
+                        <MenuItem Header = "Удалить">
+                            <MenuItem.Icon>
+                                <Image Source="Значки\Корзина.png"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </MenuItem>
+            <MenuItem
+                Header="О программе" Height="25" FontSize="15">
+            </MenuItem>
+        </Menu>
+        
+        <WrapPanel DockPanel.Dock ="Top">
+            <Button x:Name="but_I" Width="50" Height="30">
                 <Button.ToolTip>
                     <ToolTip Content="Курсив"/>
                 </Button.ToolTip>
                 <Image Source="Значки\I.png"></Image>
             </Button>
-            <Button x:Name="but_B" Width="30" Height="30">
+            <Button x:Name="but_B" Width="50" Height="30">
                 <Button.ToolTip>
                     <ToolTip Content="Полужирное начертание"/>
                 </Button.ToolTip>
                 <Image Source="Значки\БукваB.png"></Image>
             </Button>
-            <Button x:Name="but_U" Width="30" Height="30">
+            <Button x:Name="but_U" Width="50" Height="30">
                 <Button.ToolTip>
                     <ToolTip Content="Подчеркивание"/>
                 </Button.ToolTip>
                 <Image Source="Значки\U.png"></Image>
             </Button>
         </WrapPanel>
-        
-        <Menu Height="25" VerticalAlignment="Top" Background="LightGray">
-            <MenuItem>
-                <MenuItem.Header>
-                    <StackPanel Orientation="Horizontal">
-                        <Ellipse Height="10" Width="10" Fill="Black" Margin="0 0 5 0"
-/>
-                        <TextBlock>File</TextBlock>
-                    </StackPanel>
-                </MenuItem.Header>
-            </MenuItem>
-            <MenuItem Header="Edit">
-                <MenuItem.Icon>
-                    <Image Source="C:\Users\Eugene\Documents\pen.png"></Image>
-                </MenuItem.Icon>
-            </MenuItem>
-            <MenuItem Header="View"></MenuItem>
-        </Menu>
-    </Grid>
-</Window>
+
+        <StatusBar DockPanel.Dock="Bottom" Height="19" RenderTransformOrigin="0.5,0.5" >
+        </StatusBar>
+        <ListBox DockPanel.Dock="Left" MinWidth="200" Background="LightBlue"></ListBox >
+        <RichTextBox x:Name="TextBox" SpellCheck.IsEnabled = "True" Language="ru-ru" AcceptsTab="True" AcceptsReturn="True"
+                     VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" TextChanged="TextBox_TextChanged" />
+    </DockPanel>
+    
+</Window> 
