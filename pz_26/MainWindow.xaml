@@ -39,7 +39,7 @@
                 Header="О программе" Height="25" FontSize="15">
             </MenuItem>
         </Menu>
-        
+
         <WrapPanel DockPanel.Dock ="Top">
             <Button x:Name="but_I" Width="50" Height="30">
                 <Button.ToolTip>
@@ -60,9 +60,6 @@
                 <Image Source="Значки\U.png"></Image>
             </Button>
         </WrapPanel>
-
-        <StatusBar DockPanel.Dock="Bottom" Height="19" RenderTransformOrigin="0.5,0.5" >
-        </StatusBar>
         <ListBox DockPanel.Dock="Left" MinWidth="200" Background="LightBlue"></ListBox >
         <RichTextBox x:Name="TextBox" SpellCheck.IsEnabled = "True" Language="ru-ru" AcceptsTab="True" AcceptsReturn="True"
                      VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" TextChanged="TextBox_TextChanged" />
