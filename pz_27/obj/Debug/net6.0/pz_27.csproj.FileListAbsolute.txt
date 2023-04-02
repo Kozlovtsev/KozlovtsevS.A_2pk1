@@ -1,0 +1,15 @@
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_27\bin\Debug\net6.0\pz_27.exe
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_27\bin\Debug\net6.0\pz_27.deps.json
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_27\bin\Debug\net6.0\pz_27.runtimeconfig.json
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_27\bin\Debug\net6.0\pz_27.dll
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_27\bin\Debug\net6.0\pz_27.pdb
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_27\obj\Debug\net6.0\pz_27.csproj.AssemblyReference.cache
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_27\obj\Debug\net6.0\pz_27.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_27\obj\Debug\net6.0\pz_27.AssemblyInfoInputs.cache
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_27\obj\Debug\net6.0\pz_27.AssemblyInfo.cs
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_27\obj\Debug\net6.0\pz_27.csproj.CoreCompileInputs.cache
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_27\obj\Debug\net6.0\pz_27.dll
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_27\obj\Debug\net6.0\refint\pz_27.dll
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_27\obj\Debug\net6.0\pz_27.pdb
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_27\obj\Debug\net6.0\pz_27.genruntimeconfig.cache
+C:\Users\Sergey\source\repos\KozlovtsevS.A_2pk1\pz_27\obj\Debug\net6.0\ref\pz_27.dll
